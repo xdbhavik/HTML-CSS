@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animation</title>
+    <style>
+      .box {
+        width: 800px;
+        height: 800px;
+        position: relative;
+        background-color: white;
+        /* allows movement relative to its original position */
+        animation: move 5s ease-in-out infinite;
+        /* Name, duration, repeatition */
+        background-image: url(dog.png);
+        background-size: cover;
+      }
+      @keyframes move {
+        0% {
+          transform: translateX(0);
+          background-image: url(pizza.png);
+        } /* Start at the leftmost position */
+
+        50% {
+          transform: translateX(100px);
+          background-image: url(pizza2.png);
+        } /* Move to the right by 100px mid-animation */
+
+        100% {
+          transform: translateX(0);
+          background-image: url(pizza3.png);
+        } /* Return to the starting position */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

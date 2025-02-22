@@ -1,0 +1,110 @@
+<!-- 18,19-02-2025 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <center>
+      <h1>Form</h1>
+      <hr />
+      <form action="https://www.google.com" method="post" enctype="multipart/form-data">
+        <!-- get method will send data like password and name as it is to the target site (action). Post method is secure, it does not display all the info in the url bar like get does. -->
+         <!-- after submit button (register here), what should be done is defined using action attribute  -->
+          <!-- enctype defines how the form data should be encrypted when its passed to the server  -->
+           <!-- enctype multipart is used when you have a file in your form submission. text is used when only text submissions are there -->
+            
+        <label for="name">Name : </label>
+        <input
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name...."
+          value=""
+          required
+        />
+        <br /><br />
+        <label for="username">Username : </label>
+        <input
+          type="text"
+          id="usern"
+          name="usern"
+          placeholder="Choose a username...."
+          value=""
+          required
+        />
+        <br /><br />
+        <label for="mail">Email : </label>
+        <input
+          type="email"
+          name="mail"
+          id="mail"
+          placeholder="Enter your email....."
+          required
+        />
+        <br /><br />
+        <label for="mob no">Mobile No. : </label>
+        <input
+          type="tel"
+          name="mobn"
+          id="mobn"
+          required
+          placeholder="Enter your mobile no...."
+          maxlength="10"
+        />
+        <br /><br />
+        <label for="dob">Date of Birth : </label>
+        <input type="date" name="dob" id="dob" />
+        <br /><br />
+        <label for="age">Age : </label>
+        <input type="number" name="age" id="age" min="15" max="25" required />
+        <br /><br />
+        <label for="file">Age Proof : </label>
+        <input type="file" name="file" id="file" />
+        <br /><br />
+        <label for="Gender">Gender : </label>
+
+        <input type="radio" name="Gender" id="Gender" />
+        <label for="Male">Male</label>
+
+        <input type="radio" name="Gender" id="Gender" />
+        <label for="Female">Female</label>
+
+        <input type="radio" name="Gender" id="Gender" />
+        <label for="Gender">Other</label>
+
+        <br /><br />
+        <label for="branch">Branch</label>
+        <select name="course" id="course">
+          <option value="select" checked>Select a branch..</option>
+          <option value="cse">CSE</option>
+          <option value="ece">ECE</option>
+          <option value="mechl">Mechanical</option>
+          <option value="aiml">AIML</option>
+          <option value="cyb">Cyber Security</option>
+          <option value="it">IT</option>
+          <option value="civ">Civil</option>
+          <option value="chem">Chemical</option>
+        </select>
+        <br /><br />
+        <label for="passwd">Password : </label>
+        <input
+          type="password"
+          name="passwd"
+          id="passwd"
+          placeholder="Create a strong password...."
+          required
+        />
+        <br /><br />
+        <a href="$">Terms and Conditions</a>
+        <br />
+        <input type="checkbox" checked />
+        <label for="agree">Agree and Continue</label>
+        <br /><br />
+        <button type="submit">Register</button>
+      </form>
+    </center>
+    <script>document.write("Hello, javascript is enabled:")</script>
+    <noscript><p>failed to load, js is disabled</p></noscript>
+  </body>
+</html>

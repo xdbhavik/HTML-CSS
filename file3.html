@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .div {
+        box-sizing: border-box;
+        /* padding : distance between the acutal content and border */
+        padding: 250px 250px;
+        /* margin is the distance of the border from the screen border */
+        margin: 1000px 1000px;
+        height: 1000px;
+        width: 1000px;
+        background-color: #e9e3d2;
+        border-style: double;
+        border-width: 5px;
+        border-color: black;
+      }
+      .div2 {
+        height: 500px;
+        width: 500px;
+        background-image: url(pizza.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        font-size: 50px;
+        font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        box-shadow: 10px 20px 5px #a85a15,
+          /* ofset-x ofset-y blurness in bottom right => +ve values */ -10px -20px
+            5px #a85a15,
+          /* ofset-x ofset-y blurness in top left => -ve values */;
+        border-color: #a85a15;
+        border-style: dotted;
+        border-width: 10px;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="div">
+      <div class="div2">pijjo</div>
+    </div>
+  </body>
+</html>
