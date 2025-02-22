@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Photo Album</title>
+    <style>
+      .Heading {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        margin: 50px;
+        font-size: 50px;
+      }
+      .p-area {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-left: 100px;
+        padding-right: 100px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 30px;
+      }
+      .ph {
+        height: 400px;
+        width: 400px;
+        background-image: url(dog.png);
+        background-size: cover;
+        border-radius: 10px 10px;
+        /* display: flex;
+            flex-direction: row;
+            justify-content:left;
+            align-items:end; */
+        padding-left: 10px;
+        padding-bottom: 10px;
+      }
+      .ph:hover {
+        transform: scale(140%);
+        transition: all 0.5s ease-in-out;
+        z-index: -1;
+      }
+      .text {
+        border-radius: 2px;
+        position: absolute;
+        margin-top: 380px;
+        margin-left: 10px;
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: rgba(0, 0, 0, 50%);
+        border-radius: 2px;
+        color: white;
+        padding: 2px;
+        z-index: 1;
+      }
+      .outerph {
+        border-radius: 10px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="Heading">My Photo Album</h1>
+    </header>
+    <div class="p-area">
+      <div class="outerph">
+        <div class="text">Photo 1</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 2</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 3</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 4</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 5</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 6</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 7</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 8</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 9</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 10</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 11</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 12</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 13</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 14</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 15</div>
+        <div class="ph"></div>
+      </div>
+      <div class="outerph">
+        <div class="text">Photo 16</div>
+        <div class="ph"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grid</title>
+    <style>
+        .outer-box{
+
+            background-color: #0a0f17;
+            border: 5px solid black;
+            padding: 20px;
+            /* padding around the container */
+            display: grid;
+            grid-template-columns: 1fr 2fr ;
+            gap: 10px;
+        }
+        div{
+            border: 1px solid black;
+            text-align: center;
+            background-color: #2b4063;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer-box">
+        <div>Item 1</div>
+        <div>Item 2</div>
+        <div>Item 3</div>
+        <div>Item 4</div>
+        <div>Item 5</div>
+        <div>Item 6</div>
+
+    </div>
+    
+</body>
+</html>
