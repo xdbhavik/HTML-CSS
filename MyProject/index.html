@@ -2,130 +2,198 @@
 <html lang="en">
   <head>
     <title>ChaleinBuddy</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
       * {
-    background-color: beige;
-  }
-  .navbar {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-    gap: 0px;
-    background-color: beige;
-    margin-left: 100px;
-    margin-right: 100px;
-    /* position: sticky;
+        background-color: beige;
+      }
+      .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 0px;
+        background-color: beige;
+        margin-left: 100px;
+        margin-right: 100px;
+        /* position: sticky;
         top: 0; */
-  }
-  .navoption,
-  .acc {
-    margin-left: 30px;
-    margin-right: 30px;
-    text-align: center;
-    font-size: 40px;
-    background-color: beige;
-    font-family: Arial, Helvetica, sans-serif;
-    border-radius: 5px;
-    padding: 3px;
-  }
-  .navoption:hover {
-    
-    text-decoration: underline;
-    text-underline-offset: 25px;
-   
-    transition: all 0.1s ease-in-out;
-  }
-  a {
-    color: black;
-    text-decoration: none;
-  }
-  /* .acc{
+      }
+      .navoption,
+      .acc {
+        margin-left: 30px;
+        margin-right: 30px;
+        text-align: center;
+        font-size: 40px;
+        background-color: beige;
+        font-family: Arial, Helvetica, sans-serif;
+        border-radius: 5px;
+        padding: 3px;
+      }
+      .navoption:hover {
+        text-decoration: underline;
+        text-underline-offset: 25px;
+
+        transition: all 0.1s ease-in-out;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      /* .acc{
         display: flex;
         align-items: center;
         font-size: 30px;
         border-radius: 5px;
 
     } */
-  .acc:hover {
-    background-color: white;
-    filter: invert(100%);
-    transform: scale(120%);
-    transition: all 0.1s ease-in-out;
-  }
-  .head {
-    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-      "Lucida Sans", Arial, sans-serif;
-    text-align: center;
-    font-size: 75px;
-    
-  }
+      .acc:hover {
+        background-color: white;
+        filter: invert(100%);
+        transform: scale(120%);
+        transition: all 0.1s ease-in-out;
+      }
+      .head {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        text-align: center;
+        justify-items: center;
+        font-size: 75px;
 
+      }
 
+      #chalein{
+        width: 750px;
+        overflow: hidden; 
+        white-space: nowrap; 
+        margin: 0 auto; 
+        letter-spacing: 1px; 
+        border-right: 3px solid black; 
+        animation: typing 1s steps(9, end),
+            cursor-blink 0.75s step-end infinite alternate; 
+      }
 
-  .trending {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 15px;
-    justify-content: center; 
-   
-  }
-  #kumbh {
-    /* width: 882px;
+      @keyframes typing {
+        0% {
+          width: 0;
+        } 
+        100% {
+          width: 40%;
+        } 
+      }
+
+      @keyframes cursor-blink {
+         0%{
+            border-color: transparent;
+         }
+         50%{
+            border-color: black;
+         }
+        
+      }
+
+      .trending {
+        margin-top: 10px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        justify-content: center;
+      }
+      #kumbh {
+        /* width: 882px;
     height: 496px; */
-    padding-bottom: 40%;
-    background-image: url(Kumbh.png);
-    border-radius: 20px;
-    margin-top: 20px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 600%;
-    color: rgba(68, 30, 25, 75%);
-    background-size:100%;
-    transform: scale(110%);
-    text-align: center;
-  }
-  #kumbh:hover {
-    color: rgba(68, 30, 25, 100%);
-    transition: all 0.1s ease-in-out;
-    transform: scale(120%);
-  }
-  #ladakh {
-    /* width: 882px;
+        padding-bottom: 40%;
+        background-image: url(Kumbh.png);
+        border-radius: 20px;
+        margin-top: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 600%;
+        color: rgba(68, 30, 25, 75%);
+        background-size: 100%;
+        transform: scale(110%);
+        text-align: center;
+      }
+      #kumbh:hover {
+        color: rgba(68, 30, 25, 100%);
+        transition: all 0.1s ease-in-out;
+        transform: scale(120%);
+      }
+      #ladakh {
+        /* width: 882px;
     height: 496px; */
-    padding-bottom: 40%;
-    background-image: url(ladakh.png);
-    background-size: cover;
-    border-radius: 20px;
-    margin-top: 20px;
-    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 600%;
-    color: rgba(159, 137, 126, 75%);
-    background-size:100%;
-    transform: scale(110%);
-    text-align: center;
-    
-  }
-  #ladakh:hover {
-    color: rgba(159, 137, 126, 100%);
-    transition: all 0.1s ease-in-out;
-    transform: scale(120%);
-    
-  }
-  #h1 {
-    font-size: 20px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 100px;
-  }
-  .outers {
-    border-radius: 20px;
-    overflow: hidden;
-  }
+        padding-bottom: 40%;
+        background-image: url(ladakh.png);
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 600%;
+        color: rgba(159, 137, 126, 75%);
+        background-size: 100%;
+        transform: scale(110%);
+        text-align: center;
+      }
+      #ladakh:hover {
+        color: rgba(159, 137, 126, 100%);
+        transition: all 0.1s ease-in-out;
+        transform: scale(120%);
+      }
+
+      #goa {
+        padding-bottom: 40%;
+        background-image: url(goa.png);
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 600%;
+        color: rgba(212, 175, 137, 75%);
+        background-size: 100%;
+        transform: scale(110%);
+        text-align: center;
+      }
+
+      #goa:hover {
+        color: rgba(212, 175, 137, 100%);
+        transition: all 0.1s ease-in-out;
+        transform: scale(120%);
+      }
+
+      #himachal {
+        padding-bottom: 40%;
+        background-image: url(himachal.png);
+        background-size: cover;
+        border-radius: 20px;
+        margin-top: 20px;
+        font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+        font-size: 600%;
+        color: rgba(255, 255, 255, 75%);
+        background-size: 100%;
+        transform: scale(110%);
+        text-align: center;
+      }
+
+      #himachal:hover {
+        color: rgba(255, 255, 255, 100%);
+        transition: all 0.1s ease-in-out;
+        transform: scale(120%);
+      }
+
+      #h1 {
+        font-size: 20px;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-top: 100px;
+      }
+      .outers {
+        border-radius: 20px;
+        overflow: hidden;
+      }
     </style>
   </head>
   <body>
     <div class="head">
-      <h1>Chalein??</h1>
+      <h1 id="chalein">Chalein??</h1>
     </div>
 
     <div class="navbar">
@@ -137,10 +205,14 @@
 
       <div class="acc"><a href="signup.html">Sign Up</a></div>
     </div>
-    <div id="h1"><h1>Trending</h1><p class="p1">Explore this month's most visited destinations.</p>
+    <div id="h1">
+      <h1>Trending</h1>
+      <p class="p1">Explore this month's most visited destinations.</p>
       <div class="trending">
         <div class="outers"><div id="kumbh">MahaKumbh</div></div>
         <div class="outers"><div id="ladakh">Ladakh</div></div>
+        <div class="outers"><div id="goa">Goa</div></div>
+        <div class="outers"><div id="himachal">Himachal</div></div>
       </div>
     </div>
   </body>
