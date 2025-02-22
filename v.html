@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .b1 {
+        margin: 150px;
+        height: 200px;
+        width: 200px;
+        position: absolute;
+        background-color: blue;
+        z-index: 1;
+      }
+      .b2 {
+        margin: 150px;
+        height: 200px;
+        width: 200px;
+        margin-top: 50px;
+        margin-left: 50px;
+        position: absolute;
+        background-color: rgba(255, 0, 0, 100%);
+        z-index: -1;
+      }
+      .b2:hover {
+        border-radius: 50%;
+        background-image: url(pizza.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        /* border-style: double;
+        border-width: 10px;
+        border-color: white; */
+        background-position: 25%;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+        cursor: crosshair;
+        transform: scale(150%) rotate(720deg);
+        transition: all 0.2s ease-in-out;
+        transition-delay: 0.1s;
+    }
+      .b1:hover {
+        border-radius: 50%;
+        background-image: url(pizza3.png);
+        background-repeat: no-repeat;
+        background-size: 105%;
+        /* border-style: double;
+        border-width: 10px; */
+        /* border-color: white; */
+        background-position: 25%;
+        background-position-x: -8px;
+        background-color: rgba(0, 0, 0, 0);
+        z-index: 1;
+        transform: scale(150%) rotate(720deg);
+        transition: all 0.2s ease-in-out;
+        transition-delay: 0.1s;
+        cursor: crosshair;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div class="b1"></div>
+    <div class="b2"></div>
+  </body>
+</html>

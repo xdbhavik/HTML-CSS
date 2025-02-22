@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      .button:hover {
+        /* background-color: red; */
+        transition: all 1s ease-in-out;
+        
+        /* Above line can also be written as:
+            transition-property: all; meaning the transition will be applied to all properties
+            transition-behavior: ease-in;
+            transition-duration: 2s; */
+        color: blueviolet;  
+        filter: brightness(0.5);
+        border: 1.5px solid black;
+        background-image: url(texture.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Click Me</button>
+  </body>
+</html>

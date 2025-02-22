@@ -1,0 +1,57 @@
+<!-- 19-02-2025 -->
+<!-- css intro -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>css</title>
+    <!-- external css using an external file -->
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* * is universal selector. */
+      *{
+        background-image: repeating-linear-gradient(black,violet);
+      }
+      h2 {
+        color: #971e1e;
+      }
+      #h1 {
+        color: aqua;
+      }
+      #h2 {
+        color: peachpuff;
+      }
+      /* group selector */
+      #h1,#h2{
+        background-color: blueviolet;
+      }
+      .head{
+        color: #971e1e;
+      }
+
+      body{
+        background-image: url(images.jpg);
+
+      }
+    </style>
+  </head>
+  <body>
+    <!-- inline css -->
+    <h1 style="color: blue">Cascading style sheets (Inline css)</h1>
+    <!-- internal css -->
+    <h2>Cascading style sheets (Internal css)</h2>
+    <!-- inline and internal are in the same html file -->
+    <h3>External css</h3> <!--style.css-->
+    <!-- inline css has highest priority compared to internal and external -->
+    <hr />
+
+
+    <h1 id="h1">Heading</h1>
+    <h1 id="h2">Heading</h1>
+    <h1 class="head">Animals</h1>
+
+    <ul class="head">
+      <li>Dog</li>
+      <li>Cat</li>
+    </ul>
+  </body>
+</html>
